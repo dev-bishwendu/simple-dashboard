@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Financial Calculator</title>
+    <link rel="shortcut icon" href="./asset/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="./cs/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./cs/responsive.css">
+    <link rel="stylesheet" href="./cs/style.css">
+</head>
+<body>
+    <!--------------------------------- sidebar start ----------------------------------->
+    <section class="side-menu bg-gradient">
+        <div class="brand-name d-flex flex-column justify-content-center align-items-center">
+            <img src="./asset/favicon.ico" alt="">
+            <h3 class="text-light">Education</h3>
+        </div>
+        <div class="list d-flex flex-column justify-content-between py-5">
+            <a class=" text-decoration-none text-light py-2" href="#"><i class="fa-solid fa-house fa-2x pe-2"></i><span class="fs-4">Home</span></a>
+            <a class=" text-decoration-none text-light py-2" href="#"><i class="fa-solid fa-school fa-2x  pe-2"></i><span class="fs-4">Students</span></a>
+            <a class=" text-decoration-none text-light py-2" href="#"><i class="fa-solid fa-person-chalkboard fa-2x  pe-2"></i><span class="fs-4">Teachers</span></a>
+            <a class=" text-decoration-none text-light py-2" href="#"><i class="fa-solid fa-school-flag fa-2x  pe-2"></i><span class="fs-4">Classes</span></a>
+            <a class=" text-decoration-none text-light py-2" href="#"><i class="fa-solid fa-hands-holding-child fa-2x  pe-2"></i><span class="fs-4">Help</span></a>
+            <a class=" text-decoration-none text-light py-2" href="#"><i class="fa-solid fa-gear fa-2x  pe-2"></i><span class="fs-4">Settings</span></a>
+        </div>
+        <div class="sign-in d-flex flex-column justify-content-center align-items-center">
+            <a class=" text-decoration-none text-light py-2" href="#"><i class="fa-solid fa-right-to-bracket fa-2x  pe-2"></i><span class="fs-4">Sign in</span></a>
+        </div>
+    </section>
+    <!--------------------------------- sidebar end -----------------------------------> 
+
+    <!-- ------------------------------ top bar start ------------------------------ -->
+    <section class="container">
+        <div class="navbar d-flex justify-content-between align-items-center bg-gradient ps-3">
+            <form class="search-form" action="">
+                <input class="form-control" type="text" placeholder="Search here...">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="user d-flex justify-content-between align-items-center">
+                <a href="#"><img class="pe-3" src="./asset/dashboard.png" style="width: 50px; height: 40px;" alt=""></a>
+                <a href="#"><img class="pe-3" src="./asset/notifications.png" style="width: 50px; height: 40px;" alt=""></a>
+                <a href="#"><img class="pe-3" src="./asset/user.png" style="width: 50px; height: 50px;" alt=""></a> 
+            </div>
+        </div>
+        <div class="content">
+
+            <!-- ------------------------hero section start ------------------------ -->
+            <div class="cards d-flex flex-wrap justify-content-between align-items-center gap-2">
+                <div class="number shadow-lg" style="width: 18rem;">
+                    <div class="card-head">
+                        <img src="./asset/students.png" style="width: 100px; height: 100px;" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Students</h5>
+                        <p>25000</p>
+                    </div>
+                </div>
+                <div class="number shadow-lg" style="width: 18rem;">
+                    <div class="card-head">
+                        <img src="./asset/teachers.png" style="width: 100px; height: 100px;" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Teachers</h5>
+                        <p>5000</p>
+                    </div>
+                </div>
+                <div class="number shadow-lg" style="width: 18rem;">
+                    <div class="card-head">
+                        <img src="./asset/schools.png" style="width: 100px; height: 100px;" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Schools</h5>
+                        <p>10</p>
+                    </div>
+                </div>
+                <div class="number shadow-lg" style="width: 18rem;">
+                    <div class="card-head">
+                        <img src="./asset/income.png" style="width: 100px; height: 100px;" alt="">
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Income</h5>
+                        <p>2500000</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

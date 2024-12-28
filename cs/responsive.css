@@ -1,0 +1,68 @@
+@media (min-width: 100px) and (max-width: 767px) 
+{
+    
+    /*-------------- side menu start -------------*/
+    .side-menu{
+        padding: 50px 0px !important;
+    }
+    .side-menu .brand-name h3{
+        display: none;
+    }
+    .list a{
+        justify-content: center !important;
+        padding: 20px 0px 5px 10px !important;
+    }
+    .list a i{
+        font-size: 150% !important;
+    }
+    .list a span{
+        display: none;
+    }
+    .sign-in a span{
+        display: none;
+    }
+    /*-------------- side menu end -------------*/
+
+    /* -------------- topbar start ------------- */
+    .search-form{
+        display: none;
+    }
+    .user a{
+        
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0% 15% !important;
+    }
+    /* -------------- topbar end ------------- */
+
+    /* -------------- hero section start ------------- */
+    .cards{
+        gap: 40px !important;
+    }
+    .number{
+        flex-direction: column !important;
+    }
+    /* -------------- hero section end ------------- */
+}
+
+/* ------------------------------------ media query 2 start ----------------------------- */
+
+@media (min-width: 768px) and (max-width: 991px)
+{
+    /*----- sidebar start ----*/
+    .list a{
+        justify-content: center !important;
+        padding: 50px 0px 5px 20px !important;
+    }
+    .list a i{
+        font-size: 150% !important;
+    }
+    .list a span{
+        display: none;
+    }
+    .sign-in a span{
+        display: none;
+    }
+    /*----- sidebar end ----*/
+}
