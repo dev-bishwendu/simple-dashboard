@@ -1,6 +1,7 @@
+/* ------------------------------------ media query 1 start ----------------------------- */
+
 @media (min-width: 100px) and (max-width: 767px) 
 {
-    
     /*-------------- side menu start -------------*/
     .side-menu{
         padding: 50px 0px !important;
@@ -27,24 +28,27 @@
     .search-form{
         display: none;
     }
-    .user a{
-        
-        display: flex !important;
+    .user{
         justify-content: center !important;
         align-items: center !important;
-        padding: 0% 15% !important;
+        padding: auto auto !important;
+        width: 100% !important;
     }
     /* -------------- topbar end ------------- */
 
     /* -------------- hero section start ------------- */
     .cards{
         gap: 40px !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
     .number{
         flex-direction: column !important;
     }
     /* -------------- hero section end ------------- */
 }
+/* ------------------------------------ media query 1 end ----------------------------- */
 
 /* ------------------------------------ media query 2 start ----------------------------- */
 
@@ -66,3 +70,32 @@
     }
     /*----- sidebar end ----*/
 }
+
+/* ------------------------------------ media query 2 end ----------------------------- */
+
+/* ------------------------------------ media query 3 start ----------------------------- */
+
+@media (min-width: 992px) and (max-width: 1399px)
+{
+    /* sidebar start */
+    .side-menu a{
+        display: flex !important;
+        align-items: center !important;
+        padding-inline: 30px !important;
+    }
+    .side-menu a i,span{
+        font-size: 15px !important;
+    }
+    /* sidebar end */
+
+    /* hero section start */
+    .number{
+        width: 10rem !important;
+    }
+    .card-head img{
+        width: 60px !important;
+        height: 60px !important;
+    }
+    /* hero section end */
+}
+/* ------------------------------------ media query 3 end ----------------------------- */

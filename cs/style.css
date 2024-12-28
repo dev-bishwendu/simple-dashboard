@@ -95,3 +95,16 @@ body{
 .number:hover{
     background-color: #a3f1f6;
 }
+/* --------- hero section end --------- */
+
+/* --------- data table start --------- */
+.payment{
+    flex: 5;
+}
+.heading{
+    padding-right: 15%;
+}
+.students{
+    flex: 2;
+}
+/* --------- data table end --------- */

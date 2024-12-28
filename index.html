@@ -33,7 +33,7 @@
 
     <!-- ------------------------------ top bar start ------------------------------ -->
     <section class="container">
-        <div class="navbar d-flex justify-content-between align-items-center bg-gradient ps-3">
+        <div class="navbar d-flex justify-content-between align-items-center bg-gradient px-4">
             <form class="search-form" action="">
                 <input class="form-control" type="text" placeholder="Search here...">
                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
@@ -48,7 +48,7 @@
 
             <!-- ------------------------hero section start ------------------------ -->
             <div class="cards d-flex flex-wrap justify-content-between align-items-center gap-2">
-                <div class="number shadow-lg" style="width: 18rem;">
+                <div class="number shadow-lg" style="width: 18rem; height: 13rem;">
                     <div class="card-head">
                         <img src="./asset/students.png" style="width: 100px; height: 100px;" alt="">
                     </div>
@@ -57,7 +57,7 @@
                         <p>25000</p>
                     </div>
                 </div>
-                <div class="number shadow-lg" style="width: 18rem;">
+                <div class="number shadow-lg" style="width: 18rem; height: 13rem;">
                     <div class="card-head">
                         <img src="./asset/teachers.png" style="width: 100px; height: 100px;" alt="">
                     </div>
@@ -66,7 +66,7 @@
                         <p>5000</p>
                     </div>
                 </div>
-                <div class="number shadow-lg" style="width: 18rem;">
+                <div class="number shadow-lg" style="width: 18rem; height: 13rem;">
                     <div class="card-head">
                         <img src="./asset/schools.png" style="width: 100px; height: 100px;" alt="">
                     </div>
@@ -75,7 +75,7 @@
                         <p>10</p>
                     </div>
                 </div>
-                <div class="number shadow-lg" style="width: 18rem;">
+                <div class="number shadow-lg" style="width: 18rem; height: 13rem;">
                     <div class="card-head">
                         <img src="./asset/income.png" style="width: 100px; height: 100px;" alt="">
                     </div>
@@ -83,6 +83,49 @@
                         <h5 class="card-title">Income</h5>
                         <p>2500000</p>
                     </div>
+                </div>
+            </div>
+            <!-- ------------------------hero section end ------------------------ -->
+
+            <!-- ------------------------data table start ------------------------ -->
+            <div class="data-table d-flex align-items-center justify-content-between mt-5 gap-3">
+                <div class="payment d-flex flex-column shadow-lg">
+                    <div class="heading d-flex justify-content-between border-bottom border-danger">
+                        <h3>Recents payments</h3>
+                        <button class="btn btn-info">View all</button>
+                    </div>
+                    <table>
+                        <tr>
+                            <th class="text-success">Name</th>
+                            <th class="text-success">School</th>
+                            <th class="text-success">Amount</th>
+                            <td><button class="btn btn-success">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>Jhon Doe</td>
+                            <td>St. Xavier</td>
+                            <td>$250</td>
+                            <td><button class="btn btn-success">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>Jhon Doe</td>
+                            <td>St. Xavier</td>
+                            <td>$250</td>
+                            <td><button class="btn btn-success">View</button></td>
+                        </tr>
+                        <tr>
+                            <td>Jhon Doe</td>
+                            <td>St. Xavier</td>
+                            <td>$250</td>
+                            <td><button class="btn btn-success">View</button></td>
+                        </tr>
+                    </table>   
+                </div>
+                <div class="students">
+                    <div class="heading d-flex justify-content-between border-bottom border-danger">
+                        <h3>New Students</h3>
+                        <button class="btn btn-info">View all</button>
+                    </div>    
                 </div>
             </div>
         </div>
