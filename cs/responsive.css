@@ -47,6 +47,20 @@
         flex-direction: column !important;
     }
     /* -------------- hero section end ------------- */
+
+    /* -------------- data table start ------------- */
+    .data-table{
+        flex-direction: column !important;
+    }
+    .data-table h3{
+        font-size: 15px !important;
+    }
+    .data-table button{
+        font-size: 10px !important;
+    }
+    table tr th,td{
+        font-size: 10px !important;
+    }
 }
 /* ------------------------------------ media query 1 end ----------------------------- */
 
@@ -90,7 +104,7 @@
 
     /* hero section start */
     .number{
-        width: 10rem !important;
+        width: 12rem !important;
     }
     .card-head img{
         width: 60px !important;

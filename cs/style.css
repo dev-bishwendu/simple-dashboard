@@ -18,6 +18,14 @@ body{
     height: 90vh;
     overflow-y: scroll;
 }
+table tr th,td{
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+table tr:hover{
+    background-color: #a3f1f6;
+}
 /* --------- global style end --------- */
 
 /*---------- sidebar style start ---------*/
@@ -99,12 +107,14 @@ body{
 
 /* --------- data table start --------- */
 .payment{
-    flex: 5;
-}
-.heading{
-    padding-right: 15%;
+    flex: 4;    
+    height: 18rem;
+    border-radius: 12px;
 }
 .students{
-    flex: 2;
+    flex: 3;
+    height: 18rem;
+    border-radius: 12px;
 }
+
 /* --------- data table end --------- */
