@@ -73,11 +73,11 @@
     }
     .charts{
         width: 100% !important;
-        height: 50vh !important;
+        height: 550px !important;
     }
     .chart{
-        width: 80% !important;
-        height: 50vh !important;
+        width: 95% !important;
+        height: 95% !important;
     }
     /* -------------- histogram & bar chart end ------------- */
 }
