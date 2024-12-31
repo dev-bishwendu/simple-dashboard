@@ -251,23 +251,32 @@
               <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
               <script type="text/javascript">
                 google.charts.load("current", { packages: ["corechart"] });
-                  google.charts.setOnLoadCallback(drawChart);
-                  function drawChart() {
-                    var data = google.visualization.arrayToDataTable([
-                      ["Year", "Research", "Publications"],
-                      ["2004", 50, 40],
-                      ["2005", 117, 106],
-                      ["2006", 90, 30],
-                      ["2007", 30, 10],
-                      ]);
-                      var options = {
-                      title: "Research & Publication",
-                      curveType: "function",
-                      legend: { position: "bottom" },
-                      };
-                      var chart = new google.visualization.LineChart(
-                      document.getElementById("curve_chart")
-                    ); chart.draw(data, options);
+                google.charts.setOnLoadCallback(drawChart);
+                function drawChart() {
+                  var data = google.visualization.arrayToDataTable([
+                    ["Year", "Research", "Publications"],
+                    ["2004", 50, 40],
+                    ["2005", 117, 106],
+                    ["2006", 90, 30],
+                    ["2007", 30, 10],
+                    ["2008", 80, 40],
+                    ["2009", 50, 40],
+                    ["2010", 90, 30],
+                    ["2011", 30, 10],
+                    ["2012", 80, 40],
+                    ["2013", 50, 40],
+                    ["2014", 90, 30],
+                    ["2015", 30, 10],
+                    ["2016", 80, 40],
+                    ]);
+                    var options = {
+                    title: "Research & Publication",
+                    curveType: "function",
+                    legend: { position: "bottom" },
+                    };
+                    var chart = new google.visualization.LineChart(
+                    document.getElementById("curve_chart")); 
+                    chart.draw(data, options);
                   }
               </script>
             </div>
