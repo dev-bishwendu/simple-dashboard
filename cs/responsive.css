@@ -70,6 +70,7 @@
     .data-graph{
         flex-direction: column !important;
         gap: 20px !important;
+        justify-content: center !important;
     }
     .charts{
         width: 100% !important;
@@ -102,6 +103,17 @@
         display: none;
     }
     /*----- sidebar end ----*/
+
+    /* histogram & bar chart start */
+    .data-graph{
+        flex-direction: column !important;
+        gap: 20px !important;
+        justify-content: center !important;
+    }
+    .charts{
+        width: 100% !important;
+    }
+    /* histogram & bar chart end */
 }
 
 /* ------------------------------------ media query 2 end ----------------------------- */
@@ -130,5 +142,16 @@
         height: 60px !important;
     }
     /* hero section end */
+    
+    /* histogram & bar chart start */
+    .data-graph{
+        flex-direction: column !important;
+        gap: 20px !important;
+        justify-content: center !important;
+    }
+    .charts{
+        width: 100% !important;
+    }
+    /* histogram & bar chart end *
 }
 /* ------------------------------------ media query 3 end ----------------------------- */
