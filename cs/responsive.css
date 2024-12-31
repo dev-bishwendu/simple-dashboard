@@ -46,6 +46,9 @@
     .number{
         flex-direction: column !important;
     }
+    .students{
+        width: 100% !important;
+    }
     /* -------------- hero section end ------------- */
 
     /* -------------- data table start ------------- */
@@ -61,6 +64,22 @@
     table tr th,td{
         font-size: 10px !important;
     }
+    /* -------------- data table end ------------- */
+
+    /* -------------- histogram & bar chart start ------------- */
+    .data-graph{
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    .charts{
+        width: 100% !important;
+        height: 50vh !important;
+    }
+    .chart{
+        width: 80% !important;
+        height: 50vh !important;
+    }
+    /* -------------- histogram & bar chart end ------------- */
 }
 /* ------------------------------------ media query 1 end ----------------------------- */
 

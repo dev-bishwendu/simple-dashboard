@@ -108,13 +108,25 @@ table tr:hover{
 /* --------- data table start --------- */
 .payment{
     flex: 4;    
-    height: 18rem;
+    height: 28rem;
     border-radius: 12px;
 }
 .students{
     flex: 3;
-    height: 18rem;
+    height: 28rem;
     border-radius: 12px;
 }
 
 /* --------- data table end --------- */
+
+/*-- chart & histogram style start --*/
+.charts{
+    border: solid 1px #9fa8f6;
+    border-radius: 12px;
+    padding: 10px;
+}
+.chart{
+    width: 550px;
+    height: 400px;
+}
+/*-- chart & histogram style end --*/

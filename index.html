@@ -9,6 +9,9 @@
     <link href="./cs/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./cs/responsive.css">
     <link rel="stylesheet" href="./cs/style.css">
+
+    <!-- histogram & bar chart script -->
+    
 </head>
 <body>
     <!--------------------------------- sidebar start ----------------------------------->
@@ -63,7 +66,7 @@
                     </div>
                     <div class="card-body text-center">
                         <h5 class="card-title">Teachers</h5>
-                        <p>5000</p>
+                        <p>100</p>
                     </div>
                 </div>
                 <div class="number shadow-lg" style="width: 17rem; height: 13rem;">
@@ -71,7 +74,7 @@
                         <img src="./asset/schools.png" style="width: 100px; height: 100px;" alt="">
                     </div>
                     <div class="card-body text-center">
-                        <h5 class="card-title">Schools</h5>
+                        <h5 class="card-title">Departments</h5>
                         <p>10</p>
                     </div>
                 </div>
@@ -99,6 +102,24 @@
                             <th class="text-success">Name</th>
                             <th class="text-success">School</th>
                             <th class="text-success">Amount</th>
+                            <td><button class="btn btn-success">View</button></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Jhon Doe</td>
+                            <td>St. Xavier</td>
+                            <td>$250</td>
+                            <td><button class="btn btn-success">View</button></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Jhon Doe</td>
+                            <td>St. Xavier</td>
+                            <td>$250</td>
+                            <td><button class="btn btn-success">View</button></td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Jhon Doe</td>
+                            <td>St. Xavier</td>
+                            <td>$250</td>
                             <td><button class="btn btn-success">View</button></td>
                         </tr>
                         <tr class="text-center">
@@ -147,9 +168,87 @@
                             <td>Jhon Doe</td>
                             <td><img src="./asset/info.png" alt=""></td>
                         </tr>
+                        <tr class="text-center">    
+                            <td><img src="./asset/user.png" style="width: 30px; height: 30px;" alt=""></td>
+                            <td>Jhon Doe</td>
+                            <td><img src="./asset/info.png" alt=""></td>
+                        </tr>
+                        <tr class="text-center">    
+                            <td><img src="./asset/user.png" style="width: 30px; height: 30px;" alt=""></td>
+                            <td>Jhon Doe</td>
+                            <td><img src="./asset/info.png" alt=""></td>
+                        </tr>
+                        <tr class="text-center">    
+                            <td><img src="./asset/user.png" style="width: 30px; height: 30px;" alt=""></td>
+                            <td>Jhon Doe</td>
+                            <td><img src="./asset/info.png" alt=""></td>
+                        </tr>
                     </table>    
                 </div>
             </div>
+            <!-- ------------------------data table end ----------------------------->
+
+            <!----------------------- histogram & bar chart start ------------------->
+            <div class="data-graph d-flex justify-content-between align-items-center mt-5">
+                <div class="charts d-flex justify-content-around align-items-center">
+                    <div class="chart" id="piechart_3d">
+                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                        <script type="text/javascript">
+                            google.charts.load("current", {packages:["corechart"]});
+                            google.charts.setOnLoadCallback(drawChart);
+                            function drawChart() {
+                            var data = google.visualization.arrayToDataTable([
+                            ['Task', 'Hours per Day'],
+                            ['Science',     31],
+                            ['Arts',      23],
+                            ['Music',  25],
+                            ['Commerce', 12],
+                            ['Sports',    9]
+                            ]);
+                  
+                            var options = {
+                            title: 'Percentage of Students',
+                            is3D: true,
+                        };
+                  
+                            var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+                            chart.draw(data, options);
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="charts d-flex justify-content-around align-items-center">
+                    <div class="chart" id="columnchart_material">
+                        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+                        <script type="text/javascript">
+                            google.charts.load('current', {'packages':['bar']});
+                            google.charts.setOnLoadCallback(drawChart);
+                      
+                            function drawChart() {
+                              var data = google.visualization.arrayToDataTable([
+                                ['Year', 'Students', 'Teachers', 'Ratio'],
+                                ['2014', 100, 15, 16.67],
+                                ['2015', 90, 15, 15.85],
+                                ['2016', 95, 17, 16.22],
+                                ['2017', 98, 30, 14.48]
+                              ]);
+                      
+                              var options = {
+                                chart: {
+                                  title: 'Teacher & Students Ratio in Departments',
+                                  subtitle: 'Students, Teachers, and Ratio(in percentage): 2014-2017',
+                                }
+                              };
+                      
+                              var chart = new google.charts.Bar(document.getElementById('columnchart_material'));
+                      
+                              chart.draw(data, google.charts.Bar.convertOptions(options));
+                            }
+                        </script>
+                    </div>
+                </div>
+            </div>
+            <!------------------------- histogram & bar chart end -------------------->
         </div>
     </section>
     <script src="./js/bootstrap.bundle.min.js"></script>
