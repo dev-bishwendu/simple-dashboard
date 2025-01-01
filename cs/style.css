@@ -129,4 +129,7 @@ table tr:hover{
     width: 550px;
     height: 400px;
 }
+.full-width{
+    height: 350px;
+}
 /*-- chart & histogram style end --*/

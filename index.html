@@ -287,9 +287,102 @@
         <!------------------------- histogram & bar chart 2 start -------------------->
         <div class="data-graph d-flex justify-content-between align-items-center mt-5">
           <div class="charts d-flex justify-content-around align-items-center">
-            
+            <div class="chart" id="columnchart_values">
+              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+              <script type="text/javascript">
+                google.charts.load("current", {packages:['corechart']});
+                google.charts.setOnLoadCallback(drawChart);
+                function drawChart() {
+                  var data = google.visualization.arrayToDataTable([
+                    ["Element", "Density", { role: "style" } ],
+                    ["Science", 25, "#b87333"],
+                    ["Arts", 10, "silver"],
+                    ["Music", 19, "gold"],
+                    ["Commerce", 21, "color: #e5e4e2"]
+                  ]);
+                  var view = new google.visualization.DataView(data);
+                  view.setColumns([0, 1,
+                                   { calc: "stringify",
+                                     sourceColumn: 1,
+                                     type: "string",
+                                     role: "annotation" },
+                                   2]);
+                  var options = {
+                    title: "Research done by Departments",
+                    width: 550,
+                    height: 400,
+                    bar: {groupWidth: "95%"},
+                    legend: { position: "none" },
+                  };
+                  var chart = new google.visualization.ColumnChart(document.getElementById("columnchart_values"));
+                  chart.draw(view, options);
+                }
+              </script>
+            </div>
+          </div>
+          <div class="charts d-flex justify-content-around align-items-center">
+            <div class="chart" id="chart_div">
+              <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+              <script type="text/javascript">
+                google.charts.load('current', {'packages':['corechart']});
+                google.charts.setOnLoadCallback(drawChart);
+                function drawChart() {
+                  var data = google.visualization.arrayToDataTable([
+                    ['Year', 'Earnings', 'Expenses'],
+                    ['2013',  1000,      400],
+                    ['2014',  1170,      460],
+                    ['2015',  660,       1120],
+                    ['2016',  1030,      540]
+                  ]);
+                  var options = {
+                    title: 'Company Performance',
+                    hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+                    vAxis: {minValue: 0}
+                  };
+                  var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+                  chart.draw(data, options);
+                }
+              </script>
+            </div>
           </div>
         </div>
+        <!-- ------------------------- histogram & bar chart 2 end -------------------- -->
+
+        <!---------------------- histogram & bar chart 3 start--------------------------->
+        <div class="data-graph d-flex justify-content-center align-items-center mt-5">
+          <div class="full-width justify-content-center align-items-center w-100" id="calendar_basic">
+            <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+            <script type="text/javascript">
+              google.charts.load("current", {packages:["calendar"]});
+              google.charts.setOnLoadCallback(drawChart);
+              function drawChart() {
+               var dataTable = new google.visualization.DataTable();
+               dataTable.addColumn({ type: 'date', id: 'Date' });
+               dataTable.addColumn({ type: 'number', id: 'Won/Loss' });
+               dataTable.addRows([
+                  [ new Date(2012, 3, 13), 37032 ],
+                  [ new Date(2012, 3, 14), 38024 ],
+                  [ new Date(2012, 3, 15), 38024 ],
+                  [ new Date(2012, 3, 16), 38108 ],
+                  [ new Date(2012, 3, 17), 38229 ],
+                  // Many rows omitted for brevity.
+                  [ new Date(2013, 9, 4), 38177 ],
+                  [ new Date(2013, 9, 5), 38705 ],
+                  [ new Date(2013, 9, 12), 38210 ],
+                  [ new Date(2013, 9, 13), 38029 ],
+                  [ new Date(2013, 9, 19), 38823 ],
+                  [ new Date(2013, 9, 23), 38345 ],
+                  [ new Date(2013, 9, 24), 38436 ],
+                  [ new Date(2013, 9, 30), 38447 ]
+                ]);
+                var chart = new google.visualization.Calendar(document.getElementById('calendar_basic'));
+                var options = {title: "Attendance & Perticipation"};
+                chart.draw(dataTable, options);
+              }
+            </script>
+          </div>
+        </div>
+        <!------------------------ histogram & bar chart 3 end---------------------------->
       </div>
     </section>
     <script src="./js/bootstrap.bundle.min.js"></script>
