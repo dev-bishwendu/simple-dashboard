@@ -130,6 +130,10 @@ table tr:hover{
     height: 400px;
 }
 .full-width{
+    width: 100%;
     height: 350px;
+    border: solid 1px #9fa8f6;
+    border-radius: 12px;
+    padding: 10px;
 }
 /*-- chart & histogram style end --*/
